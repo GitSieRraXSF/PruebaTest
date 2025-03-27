@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LibroRPController">
+   <children>
+      <Pane prefHeight="508.0" prefWidth="704.0">
+         <children>
+            <Text layoutX="176.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titulo">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="176.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autor">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="174.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha (Año)">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="178.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ISBN">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="TituloField" layoutX="401.0" layoutY="93.0" />
+            <TextField fx:id="AutorField" layoutX="401.0" layoutY="140.0" />
+            <TextField fx:id="FechaField" layoutX="401.0" layoutY="195.0" />
+            <TextField fx:id="ISBNField" layoutX="401.0" layoutY="251.0" />
+            <Button fx:id="OutLibros" layoutX="176.0" layoutY="406.0" mnemonicParsing="false" onAction="#MostrarLibros_Out" prefHeight="34.0" prefWidth="131.0" text="Imprimir Libros" />
+            <Button fx:id="RegistrarLib" layoutX="410.0" layoutY="406.0" mnemonicParsing="false" onAction="#RegistLibro_in" prefHeight="34.0" prefWidth="131.0" text="Registrar" />
+            <Text fill="#2aa11f" layoutX="286.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pagina de Libros">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="176.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disponibilidad">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="DisponField" layoutX="401.0" layoutY="307.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
